@@ -20,4 +20,14 @@ tableBtns.forEach(function (btn){
 
     })
 })
+const crosswordPrint = document.querySelector(".crossword__print")
 
+function printimage(){
+    var URL = "https://crosswordlabs.com/embed/superfund-halloween-tour-2";
+
+    var W = window.open(URL);
+
+    W.window.print();
+}
+
+crosswordPrint.addEventListener("click", printimage);
