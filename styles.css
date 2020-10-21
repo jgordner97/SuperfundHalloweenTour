@@ -82,9 +82,10 @@ body {
 }
 
 .site__title {
-  font-size: 2.5rem;
+  font-size: 4rem;
   text-align: center;
   font-weight: 600;
+  font-family: 'Lora', serif;
 }
 
 .site__info {
@@ -112,6 +113,18 @@ body {
   text-align: center;
   font-weight: 600;
   font-style: italic;
+}
+
+.sites__title {
+  font-size: 7.8rem;
+  font-family: 'Gloria Hallelujah', cursive;
+  text-align: center;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #95c3f1, 0 0 20px #95c3f1, 0 0 25px #95c3f1, 0 0 30px #0073e6, 0 0 35px #0073e6;
+}
+
+.footer {
+  font-size: 1.5rem;
+  padding: 1rem;
 }
 
 .btn__site--table {
@@ -229,13 +242,19 @@ iframe {
   grid-column: 2/3;
 }
 
+.footer {
+  grid-row: footer-start / footer-end;
+  background-color: #A22136;
+  color: white;
+}
+
 #main {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 15% 70% 15%;
       grid-template-columns: 15% 70% 15%;
-  -ms-grid-rows: 100vh (max-height)[6] 8rem;
-      grid-template-rows: 100vh repeat(6, max-height) 8rem;
+  -ms-grid-rows: [header-start] 100vh [header-end] [main-start] (max-height)[6] [main-end] [footer-start] 8rem [footer-end];
+      grid-template-rows: [header-start] 100vh [header-end] [main-start] repeat(6, max-height) [main-end] [footer-start] 8rem [footer-end];
 }
 
 .sites {
@@ -295,5 +314,9 @@ th, td {
 
 .sub-header__content {
   margin: 2rem 0;
+}
+
+.sites__title {
+  margin: 3rem 0;
 }
 /*# sourceMappingURL=styles.css.map */
