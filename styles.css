@@ -65,7 +65,7 @@ body {
 .header__title {
   font-size: 4rem;
   text-align: center;
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: 'Gloria Hallelujah', cursive;
   font-weight: 600;
   color: #A22136;
 }
@@ -103,6 +103,14 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 2.5rem;
   text-align: center;
+}
+
+.sub-header__content {
+  font-size: 2rem;
+  font-family: 'Didact Gothic', sans-serif;
+  text-align: center;
+  font-weight: 600;
+  font-style: italic;
 }
 
 .btn__site--table {
@@ -146,9 +154,7 @@ iframe {
 }
 
 .header {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  grid-row: 1/2;
+  grid-column: 1/-1;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 35% 32.5% 32.5%;
@@ -171,8 +177,8 @@ iframe {
   -ms-grid-row-span: 1;
   grid-row: 2/3;
   padding: 2rem;
-  color: white;
-  background-color: #152561;
+  color: #A22136;
+  background-color: black;
   margin-right: 2rem;
   height: 100%;
   padding-top: 10%;
@@ -216,7 +222,13 @@ iframe {
   height: 100%;
 }
 
-body {
+.sub-header {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+}
+
+#main {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 15% 70% 15%;
@@ -225,7 +237,7 @@ body {
       grid-template-rows: 100vh repeat(6, max-height) 8rem;
 }
 
-#main {
+.sites {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
@@ -278,5 +290,9 @@ th, td {
   height: 8px;
   background: #A22136;
   width: 0%;
+}
+
+.sub-header__content {
+  margin: 2rem 0;
 }
 /*# sourceMappingURL=styles.css.map */
