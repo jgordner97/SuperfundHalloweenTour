@@ -246,6 +246,7 @@ body {
 table, th, td {
   border: 1px solid #152561;
   border-collapse: collapse;
+  min-width: 100%;
 }
 
 .display {
