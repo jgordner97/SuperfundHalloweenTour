@@ -68,6 +68,7 @@ body {
   font-family: 'Gloria Hallelujah', cursive;
   font-weight: 600;
   color: #A22136;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #95c3f1, 0 0 20px #95c3f1, 0 0 25px #95c3f1, 0 0 30px #0073e6, 0 0 35px #0073e6;
 }
 
 .header__intro {
