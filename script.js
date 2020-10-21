@@ -18,8 +18,20 @@ tableBtns.forEach(function (btn){
         const infoTable = e.currentTarget.nextElementSibling;
         infoTable.classList.toggle("nodisplay")
 
+        if(infoTable.classList.contains("nodisplay")){
+            e.currentTarget.textContent = "Show Table"
+        }else {
+            e.currentTarget.textContent = "Hide Table"
+        }
+        console.log(infoTable.classList.contains("nodisplay"));
+        console.log(e.currentTarget.textContent);
+        
+        
+
+
     })
 })
+
 const crosswordPrint = document.querySelector(".crossword__print")
 
 function printimage(){
