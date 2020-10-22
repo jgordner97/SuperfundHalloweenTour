@@ -65,7 +65,7 @@ body {
 .header__title {
   font-size: 4rem;
   text-align: center;
-  font-family: 'Gloria Hallelujah', cursive;
+  font-family: 'Didact Gothic', sans-serif;
   font-weight: 600;
   color: #A22136;
   text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #95c3f1, 0 0 20px #95c3f1, 0 0 25px #95c3f1, 0 0 30px #0073e6, 0 0 35px #0073e6;
@@ -161,6 +161,12 @@ small {
 .map {
   border: 5px solid #152561;
   margin-bottom: 3rem;
+}
+
+.map__print {
+  margin-top: 1rem;
+  width: 100%;
+  border: none;
 }
 
 iframe {
