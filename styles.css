@@ -107,6 +107,10 @@ body {
   text-align: center;
 }
 
+.crossword__clue {
+  color: #fd2146;
+}
+
 .sub-header__content {
   font-size: 2rem;
   font-family: 'Didact Gothic', sans-serif;
@@ -259,8 +263,8 @@ iframe {
   display: grid;
   -ms-grid-columns: 15% 70% 15%;
       grid-template-columns: 15% 70% 15%;
-  -ms-grid-rows: [header-start] 100vh [header-end] [main-start] (max-height)[6] [main-end] [footer-start] 8rem [footer-end];
-      grid-template-rows: [header-start] 100vh [header-end] [main-start] repeat(6, max-height) [main-end] [footer-start] 8rem [footer-end];
+  -ms-grid-rows: 100vh (max-height)[6] 8rem;
+      grid-template-rows: 100vh repeat(6, max-height) 8rem;
 }
 
 .sites {
